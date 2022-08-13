@@ -1,0 +1,74 @@
+@media screen and (max-width: 950px) {
+    #get-character {
+        margin: 0 auto;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .filter__title {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .user {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .filters {
+        margin: 10px;
+    }
+
+    .filter__title {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .user {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #get-character {
+        font-size: 14px;
+    }
+
+    .filter__title {
+        font-size: 14px;
+        width: 60%;
+    }
+
+    .filter-block {
+        display: block;
+    }
+
+    .filters_select {
+        width: 60%;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .btn_pages {
+        font-size: 14px;
+        padding: 3px 15px;
+    }
+
+    #input-pages {
+        width: 80px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #characters {
+        display: block;
+    }
+
+    .user {
+        width: 90%;
+        margin: 20px auto;
+    }
+}

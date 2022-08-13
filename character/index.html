@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./media.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="get-character" placeholder="character search" onkeyup="RickAndMorty()">
+
+        <div class="filter-block">
+            <div class="filters">
+                <p class="filter__title">Фильтровать по статусу</p>
+                <select name="filter-status" class="filters_select" id="filter-status" onchange="RickAndMorty()">
+                    <option value="">Все</option>
+                    <option value="alive">в живых</option>
+                    <option value="dead">мертвый</option>
+                    <option value="unknown">неизвестный</option>
+                </select>
+            </div>
+
+            <div class="filters">
+                <p class="filter__title">Фильтровать по полу</p>
+                <select name="filter-gender" class="filters_select" id="filter-gender" onchange="RickAndMorty()">
+                    <option value="">Все</option>
+                    <option value="male">мужчина </option>
+                    <option value="female">женщина</option>
+                    <option value="genderless">бесполый</option>
+                    <option value="unknown">неизвестный</option>
+                </select>
+            </div>
+
+            <div class="filters">
+                <p class="filter__title">Фильтровать по разновидноси</p>
+                <select name="filter-species" class="filters_select" id="filter-species" onchange="RickAndMorty()">
+                    <option value="">Все</option>
+                    <option value="Human">Человек</option>
+                    <option value="Alien">Инопланетянин</option>
+                    <option value="Humanoid">Гуманоид</option>
+                    <option value="Animal">Животное</option>
+                    <option value="Cronenberg">Кроненберг</option>
+                    <option value="unknown">неизвестный</option>
+                    <option value="Robot">Робот</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="characters"></div>
+        <div class="page-pagination">
+            <button id="prev-pages" class="btn_pages">prev</button>
+            <input type="number" value="1" disabled id="input-pages" onchange="RickAndMorty()">
+            <button id="next-pages" class="btn_pages">next</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
